@@ -53,8 +53,8 @@ fi
 tar -xf "$FILENAME" -C "${BUILD_PATH}"
 FILENAME=/workspace/$KERNEL_VERSION-hypriotos-v8.tar.gz
 if [ ! -f "$FILENAME" ]; then
-  fetch --repo="https://github.com/DieterReuter/rpi64-kernel" --tag="v$KERNEL_BUILD" --release-asset="$KERNEL_VERSION-hypriotos-v8.tar.gz.sha256" /workspace
-  fetch --repo="https://github.com/DieterReuter/rpi64-kernel" --tag="v$KERNEL_BUILD" --release-asset="$KERNEL_VERSION-hypriotos-v8.tar.gz" /workspace
+  fetch --repo="https://github.com/jdkuhne/rpi64-kernel" --tag="v$KERNEL_BUILD" --release-asset="$KERNEL_VERSION-hypriotos-v8.tar.gz.sha256" /workspace
+  fetch --repo="https://github.com/jdkuhne/rpi64-kernel" --tag="v$KERNEL_BUILD" --release-asset="$KERNEL_VERSION-hypriotos-v8.tar.gz" /workspace
 fi
 tar -xf "$FILENAME" -C "${BUILD_PATH}"
 
